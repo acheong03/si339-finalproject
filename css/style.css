@@ -1,0 +1,10 @@
+.jump-link{
+    position: absolute;
+    display: block;
+    top: -40px;
+}
+.jump-link:focus{
+    position: static;
+    text-align: center;
+    top: 20px;
+}
