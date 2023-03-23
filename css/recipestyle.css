@@ -1,4 +1,6 @@
-.jump-link{
+.current{
+    text-decoration: underline;
+}.jump-link{
     position: absolute;
     display: block;
     top: -40px;
