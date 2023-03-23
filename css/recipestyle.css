@@ -1,6 +1,4 @@
-.current{
-    text-decoration: underline;
-}.jump-link{
+.jump-link{
     position: absolute;
     display: block;
     top: -40px;
@@ -10,6 +8,10 @@
     text-align: center;
     top: 20px;
 }
-.current{
+.nav-link a{
+    color: black;
+    text-decoration: none;
+}
+.current a, .nav-link:hover{
     text-decoration: underline;
 }
