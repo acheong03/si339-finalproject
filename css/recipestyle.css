@@ -8,11 +8,11 @@
     text-align: center;
     top: 20px;
 }
-body{
+/* body{
     font-family: "Comic Neue", serif;
-    /* font-family: "Square Peg"; */
-    /* font-size: 170%; */
-}
+    font-family: "Square Peg";
+    font-size: 170%;
+} */
 .nav-link a{
     color: black;
     text-decoration: none;
