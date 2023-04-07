@@ -15,54 +15,29 @@
 .current a, .nav-link:hover{
     text-decoration: underline;
 }
-.contain{
+.container{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 15px;
-    margin: 10px;
+    grid-template-columns: 3fr 2fr 3fr 2fr;
 }
-.method-title{
+.title{
     grid-column: 1 / -1;
     text-align: center;
 }
-.contain{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    height: 200px;
-    padding: 10px;
-    flex: 50%;
-}
-
-@media (max-width: 800px) {
-    .contain{
-      flex-direction: column;
-      flex: 100%;
-    }
-}
 /* Do I attempt to do flashcard style? */
-
-.nespresso{
+.cold-brew{
     grid-row-start: 2;
-    grid-column-start: 1;
+    grid-column: 1 / 2;
 }
-.drip-coffee{
+.iced-coffee{
+    grid-row-start: 2;
+    grid-column: 3 / 4;
+}
+.americano{
     grid-row-start: 3;
-    grid-column-start: 2;
 }
-.pour-over{
+.latte{
     grid-row-start: 4;
-    grid-column-start: 1;
 }
-.french-press{
+.customize{
     grid-row-start: 5;
-    grid-column-start: 2;
-}
-.moka-pot{
-    grid-row-start: 6;
-    grid-column-start: 1;
-}
-.espresso{
-    grid-row-start: 7;
-    grid-column-start: 2;
 }
