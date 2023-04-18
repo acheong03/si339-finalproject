@@ -40,7 +40,7 @@ body{
 .intro, .note{
     margin-left: 10px;
 }
-.opening>h1{
+h1{
     display: none;
 }
 p{
