@@ -17,6 +17,11 @@
 header{
     border-bottom: solid 3px black;
 }
+.opening h1{
+    display: block;
+    text-align: center;
+    padding: 10% 0;
+}
 footer{
     text-align: center;
 }
@@ -37,9 +42,6 @@ body{
 }
 .intro, .note{
     margin-left: 10px;
-}
-.opening h1{
-    display: none;
 }
 .home p{
     font-size: 110%;
@@ -118,6 +120,9 @@ figure img{
     .flip-card{
         transition: none;
     }
+    .navbar{
+        transition: none;
+    }
 }
 @media screen and (min-width: 768px) {
     .navbar{
@@ -142,11 +147,6 @@ figure img{
     }
     .opening{
         height: 40vw;
-    }
-    .opening h1{
-        display: block;
-        text-align: center;
-        padding: 10% 0;
     }
     .card-wrapper{
         grid-template-columns: 1fr 1fr;
