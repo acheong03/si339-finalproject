@@ -14,7 +14,12 @@
 .current a, .nav-link:hover{
     text-decoration: underline;
 }
-
+.menu{
+    display: none;
+}
+header{
+    border-bottom: solid 3px #000000;
+}
 .brewing, .milk, .grinding{
     display: flex;
     flex-wrap: wrap;
