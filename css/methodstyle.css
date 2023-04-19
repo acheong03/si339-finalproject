@@ -1,12 +1,3 @@
-.navbar{
-    display: none;
-}
-.menu{
-    display: none;
-}
-header {
-    border-bottom: solid 3px #000000;
-}
 .nav-items{
     display: flex;
     width: 100%;
@@ -14,49 +5,67 @@ header {
     margin: 10px 0;
     font-size: 110%;
 }
+
 .nav-link a{
     color: black;
     text-decoration: none;
 }
+
 .current a, .nav-link:hover{
     text-decoration: underline;
 }
-.opening{
-    height: 40vw;
-}
-.nav-link a{
-    color: black;
-    text-decoration: none;
-}
-.current a, .nav-link:hover{
-    text-decoration: underline; 
-}
+
 .brewing, .milk, .grinding{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.brewing, .milk, .grinding {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
     margin: 5px;
 }
+
+.brewing img, .milk img, .grinding img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.brewing p, .milk p, .grinding p {
+    flex: 1;
+}
 img {
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
 }
-@media screen and (prefers-reduced-motion: reduce){
-    .navbar{
-        transition: none;
-    }
+h1{
+    text-align: center;
 }
+
 @media screen and (min-width: 768px) {
     .nav-items{
         justify-content: flex-end;
     }
-    .brewing, .milk, .grinding{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 10px;
-        margin: 7px;
+    .brewing, .milk, .grinding {
+        flex-direction: row;
+        margin: 5px;
+    }
+    h1{
+        text-align: center;
+    }
+    img {
+        width: 400px;
+        height: 400px;
+        object-fit: cover;
     }
 }
+
 @media screen and (min-width: 1200px){
     .jump-link{
         position: absolute;
@@ -78,25 +87,11 @@ img {
     title {
         text-align: center;
     }
-    .brewing, .milk, .grinding{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-gap: 15px;
-        margin: 10px;
+    .brewing, .milk, .grinding {
+        gap: 20px;
+        margin: 5px;
     }
-    img {
-        width: 300px;
-        height: 300px;
-    }
-    p {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        margin: 0;
-    }
-    h1 {
+    h1{
         text-align: center;
     }
-    
 }
