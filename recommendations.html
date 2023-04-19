@@ -7,14 +7,47 @@
     <link rel="stylesheet" href="css/html5reset.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&family=Dosis&family=Square+Peg&family=Thasadith&family=Zilla+Slab&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/recommendationstyle.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Recommendations</title>
 </head>
 <body>
     <header>
         <a class='jump-link' href='#main'>Jump to content</a>
-        <nav>
-            <ul class='nav_items'>
+        <!--Navbar-->
+        <nav class="navbar navbar-light navbar-1 white">
+
+            <!-- Navbar brand -->
+            <a class="navbar-brand">Custom Café</a>
+        
+            <!-- Collapse button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent15"
+            aria-controls="navbarSupportedContent15" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        
+            <!-- Collapsible content -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent15">
+        
+            <!-- Links -->
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                <a class="nav-link" href="recommendations.html">Beginner Recommendations<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                <li class="nav-item">
+                <a class="nav-link" href="methods.html">Brewing Methods</a>
+                </li>
+                <li class="nav=item">
+                    <a class="nav-link" href="recipes.html">Coffee Guide</a>
+                </li>
+            </ul>
+            <!-- Links -->
+            </div>
+            <!-- Collapsible content -->
+        
+        </nav>
+        <nav class="menu">
+            <ul class='nav-items'>
                 <li class="nav-link"><a href='index.html'>Home</a></li>
                 <li class="nav-link"><a href='methods.html'>Brewing Methods</a></li>
                 <li class="nav-link"><a href='recipes.html'>Coffee Guide</a></li>
@@ -22,14 +55,36 @@
             </ul>
         </nav>
     </header>
-    <main class='container' id='main'>
-        <h1>Recommendation from us!</h1>
-        <p><img src="images/appliances/nespresso.jpg" alt="nespresso coffee machine pouring into red cup">For Coffee Machines we reccomend a Nespresso Machine for beginners. It is very easy to start with. No need to worry about the shape or size of the grounds or too much about how much water is being poured in. Just choose the coffee bean that suits your palette and pop it in!</p>
-        <p><img src="images/appliances/milk-frother.jpg" alt="milk frother being used in milk pitcher">For Milk having a milk frother on hand can be useful for many different drinks. It can be used to quickly and thoroughly mix matcha, create designs in cups using 
-        syrup or simply froth milk for quick latte art!</p>
-        <p>For ingredients, it is good to have simple things to elevate yuour drinks such as vanilla syrup and hazelnut syrups!</p>
-        <h1>Notes</h1>
-        <p>These reccomendations are for beginners to brewing and making your own drinks! The machines and ingredients will differ based on your preferences and experience with using machines to make coffee and cafe drink!!</p>
+    <main class='recommendations' id='main'>
+        <h1>Recommendations from us!</h1>
+        <div class="bean">
+            <h2>Coffee Bean</h2>
+            <img src="images/recommend/veranda.jpg">
+        </div>
+        <div class="bean-text">
+            <p>If you're interested in building your own cafe at home, you most likely have tried out Starbucks before. If so, we recommend their veranda blend coffee grounds, which are used in some Starbucks drinks. Blonde roasts are toasted lighter in a shorter time which gives them a less intense taste. This specific product has hints of chocolate flavors, giving you a more familiar flavor without overpowering the aroma of the beans. If you'd like to start off with brewed coffee, we definitely recommend giving this a try to get yourself into the world of coffee.</p>
+        </div><br>
+        <div class="machine">
+            <h2>Coffee Machine</h2>
+            <img src="images/appliances/espresso-machine.jpg">
+        </div>
+        <div class="machine-text">
+            <p>The first step to making your home cafe - a coffee machine! Making coffee without a coffee machine will be very hard, which is why we recommend getting an espresso machine. Brewed coffee has its own charms… But with the number of types of drinks you can make with espresso shots, espresso machines are worth the investment: lattes, americano, macchiato, espresso con panna, cappuccino, and the list goes on. Espresso tablets also come in various flavors, so play around and have fun with it! Create your own coffee world ☕</p>
+        </div><br>
+        <div class="flavoring">
+            <h2>Flavoring</h2>
+            <img src="images/recommend/vanilla.jpg">
+        </div>
+        <div class="flavoring-text">
+            <p>For starters, vanilla is always a wonderful go-to syrup to add into your coffee. It's a very familiar flavor and a classic syrup, so it's always a great flavor to keep in your personal cafe. You also don't need to add it just coffee, you can add it to other drinks like tea lattes such as matcha lattes or chai lattes to make things a bit sweeter!</p>
+        </div>
+        <div class="froth">
+            <h2>Milk Texture</h2>
+            <img src="images/appliances/milk-frother.jpg">
+        </div>
+        <div class="froth-text">
+            <p>Espresso drinks can get pretty strong for some people, which is perfectly fine when you are new to coffee. It can also get typical sometimes if you're always pulling the shots and filling up your cup with milk or water. When you feel that way, you can make a big change by getting yourself a milk frother. As the name suggests, it froths and foams up the milk, which works best with skim (nonfat) milk. It's like icing a cake with whipped cream but for coffee! Add a bit of flavored powder (e.g. vanilla, malt, cocoa, etc.), and now you have endless options for changing up your drink.</p>
+        </div><br>
     </main>
         <!-- Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
