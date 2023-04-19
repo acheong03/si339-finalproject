@@ -15,7 +15,7 @@
     display: none;
 }
 header{
-    border-bottom: solid 3px black;
+    border-bottom: solid 3px #000000;
 }
 .opening h1{
     display: block;
@@ -124,7 +124,6 @@ figure img{
     margin: 0 10px;
     align-items: center;
     justify-items: center;
-    border-bottom: solid 3px #000000;
 }
 .recommendations h1, .recommendations h2{
     grid-column: 1 / -1;
