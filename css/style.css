@@ -116,6 +116,24 @@ figure img{
     transform: rotateY(180deg);
     -webkit-transform: rotateY(180deg);
 }
+/* Recommendations */
+.recommendations{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+    margin: 0 10px;
+    align-items: center;
+    justify-items: center;
+    border-bottom: solid 3px #000000;
+}
+.recommendations h1, .recommendations h2{
+    grid-column: 1 / -1;
+    text-align: center;
+}
+.bean img, .machine img, .flavoring img, .froth img{
+    width: 300px;
+    height: 300px;
+}
 @media screen and (prefers-reduced-motion: reduce){
     .flip-card{
         transition: none;
@@ -165,6 +183,15 @@ figure img{
     .current a, .nav-link:hover{
         text-decoration: underline;
     }
+    .recommendations{
+        grid-template-columns: 1fr 1fr;
+    }
+    .bean, .machine, .flavoring, .froth{
+        grid-column: 1;
+    }
+    .bean-text, .machine-text, .flavoring-text, .froth-text{
+        grid-column: 2;
+    }
 }
 @media screen and (min-width: 1200px){
     .nav-items{
@@ -172,5 +199,12 @@ figure img{
     }
     .card-wrapper{
         grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .recommendations{
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 0 30px;
+    }
+    .bean-text, .machine-text, .flavoring-text, .froth-text{
+        grid-column: 2 / 4;
     }
 }
