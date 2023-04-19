@@ -38,8 +38,8 @@ header {
     margin: 5px;
 }
 img {
-    width: auto;
-    height: auto;
+    width: 300px;
+    height: 300px;
 }
 @media screen and (prefers-reduced-motion: reduce){
     .navbar{
@@ -85,8 +85,8 @@ img {
         margin: 10px;
     }
     img {
-        width: auto;
-        height: auto;
+        width: 300px;
+        height: 300px;
     }
     p {
         display: flex;
