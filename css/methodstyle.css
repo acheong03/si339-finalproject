@@ -1,6 +1,9 @@
 .jump-link{
     position: absolute;
     display: block;
+    color: #000000;
+    border: solid 2px #000000;  
+    text-decoration: underline;
     top: -40px;
 }
 .jump-link:focus{
