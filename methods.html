@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue&family=Dosis&family=Square+Peg&family=Thasadith&family=Zilla+Slab&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/methodstyle.css">
+    <script src="https://kit.fontawesome.com/62f0070f0f.js" crossorigin="anonymous"></script>
     <title>Brewing Methods</title>
 </head>
 <body>
@@ -17,7 +19,7 @@
         <nav class="navbar navbar-light navbar-1 white">
 
             <!-- Navbar brand -->
-            <a class="navbar-brand">Custom Café</a>
+            <a class="navbar-brand" href="#">Home</a>
         
             <!-- Collapse button -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent15"
@@ -29,54 +31,62 @@
             <!-- Links -->
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                <a class="nav-link" href="methods.html">Brewing Methods<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="recipes.html">Coffee Guide <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="index.html">Home</a>
                     </li>
                 <li class="nav-item">
-                <a class="nav-link" href="recipes.html">Coffee Guide</a>
+                <a class="nav-link" href="methods.html">Brewing Methods</a>
                 </li>
                 <li class="nav=item">
                     <a class="nav-link" href="recommendations.html">Beginner Recommendations</a>
                 </li>
             </ul>
             <!-- Links -->
+        
             </div>
             <!-- Collapsible content -->
+        
         </nav>
-        <nav>
+        <!-- Nav menu for non-mobile screens -->
+        <nav class="menu">
             <ul class='nav-items'>
-                <li class="nav-link"><a href='index.html'>Custom Café</a></li>
-                <li class="nav-link current"><a href='methods.html'>Brewing Methods</a></li>
-                <li class="nav-link"><a href='recipes.html'>Coffee Guide</a></li>
-                <li class="nav-link"><a href='recommendations.html'>Drink Recommendations</a></li>
+                <li class="nav-link"><a href='index.html'>Home</a></li>
+                <li class="nav-link"><a href='methods.html'>Brewing Methods</a></li>
+                <li class="nav-link current"><a href='recipes.html'>Coffee Guide</a></li>
+                <li class="nav-link"><a href='recommendations.html'>Beginner Recommendations</a></li>
             </ul>
         </nav>
-    </header>
     <main id='main'>
-        <h1>Coffee Equipment</h1>
+        <h1><br>Coffee Equipment</h1>
         <div class="brewing">
-            <p><img src="images/appliances/nespresso.jpg" alt="nespresso coffee machine pouring into red cup">Nespresso Cofee Machines are easy to use, no need to ground coffee beans our worry about a even pour. Just by pods with coffee beans that fit your personal taste and pop them into the machine!</p>
-            <p><img src="images/appliances/drip-coffee.jpg" alt="pink simple coffee machines and white coffee grinder"> Drip Coffee Machines will require ground coffee beans. you put them in a filter in the machine and wait for the coffee to slowly drip into your cup or pot!</p>
-            <p><img src="images/appliances/pour-over.jpg" alt="glass chemex filtering coffee">Pour Over devices are the same concept as drip coffee but a little more manual. You will put coffee ground in a filter and manually pour hot water over the grounds, controlling the strength of your coffee!</p>
-            <p><img src="images/appliances/french-press.jpg" alt="red french press with coffee grounds inside">French Press machines are easy to use. Add hot water and desired coffee grounds into the press and put the lid on. Wait for the coffee to brew for 3-4 minutes and then press down to filter the grounds from the coffee! </p>
-            <p><img src="images/appliances/moka-pot.jpg" alt="silver moka pot on active stove">Moka Pots are a little harder to use properly. Add water into the bottom chamber and Coffee grounds into the funnel. Put the pot together and place on heat. Wait for the coffee to start rising into the top chamber and then pour!</p>
-            <p><img src="images/appliances/espresso-machine.jpg" alt="espresso machine pouring two shots">For a real cafe experience, Espresso Machines are best. Ground coffee beans into portafilter and press. Put into the machine and wait for an espresso shot to be pulled. Make latte art, lattes or espresso shots from your home!</p>
+            <img src="images/appliances/nespresso.jpg" alt="nespresso coffee machine pouring into red cup">
+            <p>Nespresso Cofee Machines are easy to use, no need to ground coffee beans our worry about a even pour. Just by pods with coffee beans that fit your personal taste and pop them into the machine!</p>
+            <img src="images/appliances/drip-coffee.jpg" alt="pink simple coffee machines and white coffee grinder"> 
+            <p>Drip Coffee Machines will require ground coffee beans. you put them in a filter in the machine and wait for the coffee to slowly drip into your cup or pot!</p>
+            <img src="images/appliances/pour-over.jpg" alt="glass chemex filtering coffee">
+            <p>Pour Over devices are the same concept as drip coffee but a little more manual. You will put coffee ground in a filter and manually pour hot water over the grounds, controlling the strength of your coffee!</p>
+            <img src="images/appliances/french-press.jpg" alt="red french press with coffee grounds inside">
+            <p>French Press machines are easy to use. Add hot water and desired coffee grounds into the press and put the lid on. Wait for the coffee to brew for 3-4 minutes and then press down to filter the grounds from the coffee!</p>
+            <img src="images/appliances/moka-pot.jpg" alt="silver moka pot on active stove">
+            <p>Moka Pots are a little harder to use properly. Add water into the bottom chamber and Coffee grounds into the funnel. Put the pot together and place on heat. Wait for the coffee to start rising into the top chamber and then pour!</p>
+            <img src="images/appliances/espresso-machine.jpg" alt="espresso machine pouring two shots">
+            <p>For a real cafe experience, Espresso Machines are best. Ground coffee beans into portafilter and press. Put into the machine and wait for an espresso shot to be pulled. Make latte art, lattes or espresso shots from your home!</p>
         </div>
-        <h1>Milk Equipment</h1>
+        <h1><br>Milk Equipment</h1>
         <div class="milk">
             <img src="images/appliances/milk-frother.jpg" alt="milk frother being used in milk pitcher">
             <p>Milk Frother are very versatile. You can froth milk, mix matcha, or create cool design in your cup!</p>
             <img src="images/appliances/steam-wand.jpg" alt="steaming milk with wand attached to espresso machine">
             <p>Steaming Milk Wands are used to make steamed milk. This milk can be used for latte art with an espresso shot or as is for kids!</p>
         </div>
-        <h1>Bean Grinders</h1>
+        <h1><br>Bean Grinders</h1>
         <div class="grinding">
             <img src="images/appliances/grinder-machine.png" alt="white coffee grinder machine surrounded by house decorations">
-            <p>Coffee Grinder Machines will grind your coffee beans to a fine grind with ease!</p>
+            <p>Coffee Grinder Machines will grind your coffee beans to a fine grind with ease! No need to struggle or take a lot of time to grind the beans</p>
             <img src="images/appliances/manual-grinder.jpg" alt="copper manual coffee grinder with grounds">
-            <p>Manual Coffe Grinders will take a bit more work but are said to bring out the aroma of the coffee grounds better!</p>
+            <p>Manual Coffee Grinders will take a bit more work but are said to bring out the aroma of the coffee grounds better! You can also customize the size of your ground depending on what type of coffee method you are using or your preference!</p>
         </div>
     </main>
         <!-- Bootstrap -->
